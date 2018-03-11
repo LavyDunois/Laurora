@@ -2,7 +2,7 @@
 		<div class="menu">
 			<div class="left">
 				<a href="?page=home">
-					<img class="menu-logo" src="resources/logo/laurora-edelsmederij-paars.png">
+					<img class="menu-logo" src="images/menu/laurora-edelsmederij-paars.png">
 				</a>
 			</div>
 			<div class="right">
@@ -11,25 +11,25 @@
 		echo '
 				<a class="menu-item current" href="?page=home">home</a>
 				<a class="menu-item" href="?page=collectie">collectie</a>
-				<!--<a class="menu-item" href="?page=contact">contact</a>-->
+				<a class="menu-item" href="?page=contact">contact</a>
 		';
 	}elseif($_GET["page"] == "home"){
 		echo '
 				<a class="menu-item current" href="?page=home">home</a>
 				<a class="menu-item" href="?page=collectie">collectie</a>
-				<!--<a class="menu-item" href="?page=contact">contact</a>-->
+				<a class="menu-item" href="?page=contact">contact</a>
 		';
 	}elseif($_GET["page"] == "collectie"){
 		echo '
 				<a class="menu-item" href="?page=home">home</a>
 				<a class="menu-item current" href="?page=collectie">collectie</a>
-				<!--<a class="menu-item" href="?page=contact">contact</a>-->
+				<a class="menu-item" href="?page=contact">contact</a>
 		';
 	}elseif($_GET["page"] == "contact"){
 		echo '
 				<a class="menu-item" href="?page=home">home</a>
 				<a class="menu-item" href="?page=collectie">collectie</a>
-				<!--<a class="menu-item current" href="?page=contact">contact</a>-->
+				<a class="menu-item current" href="?page=contact">contact</a>
 		';
 	}
 ?>
