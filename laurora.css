@@ -1,0 +1,291 @@
+/*Laurora CSS*/
+html{
+	
+}
+body{
+	background-color:#fff;
+	font-family:sans-serif;
+	color:#555;
+	width:100%;
+	height:100%;
+	margin:0;
+}
+h1,h2,p{
+	float:left;
+	width:100%;
+	margin:0px 0px 20px;
+}
+h1{
+	font-size:32px;
+	color:#572a73;
+}
+h2{
+	font-size:24px;
+	color:#572a73;
+}
+p{
+	font-size:20px;
+	color:#888;
+}
+a{
+	text-decoration:none;
+}
+textarea{
+	font-family:sans-serif;
+}
+
+/*Menu*/
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+.menu{
+	position:fixed;
+	left:0;
+	top:0;
+	text-align:center;
+	float:left;
+	width:80%;
+	padding:0% 10%;
+	text-transform:uppercase;
+	font-weight:700;
+	background-color:#fff;
+	transition:box-shadow 200ms linear;
+}
+.menu-shadow{
+	box-shadow:0px 0px 15px -5px #444;
+	transition:box-shadow 200ms linear;
+}
+.menu-logo{
+	float:left;
+	width:auto;
+	height:110px;
+	margin:5px 0px;
+	transition:width 200ms linear, height 200ms linear, margin 200ms linear;
+}
+.menu-logo-small{
+	width:auto;
+	height:70px;
+	margin:0px 0px;
+	transition:width 200ms linear, height 200ms linear, margin 200ms linear;
+}
+a.menu-item{
+	color:#777;
+	background-color:#fff;
+	float:left;
+	text-align:center;
+	letter-spacing:1px;
+	font-kerning:none;
+	padding:27px 30px 25px;
+	cursor:pointer;
+	transition:background-color 200ms linear, color 200ms linear, padding 200ms linear;
+}
+a.menu-item:hover{
+	color:#fff;
+	background-color:#572a73;
+	transition:background-color 200ms linear, color 200ms linear, padding 200ms linear;
+}
+a.menu-item-height{
+	padding:27px 30px 25px;
+	transition:background-color 200ms linear, color 200ms linear, padding 200ms linear;
+}
+.current{
+ 	color:#fff !important;
+	background-color:#572a73 !important;
+	transition:background-color 200ms linear, color 200ms linear, padding 200ms linear;
+}
+
+/*Content*/
+.img-wrapper{
+	width:100%;
+	height:100%;
+	float:left;
+}
+.img-margin{
+	margin:50px 0px 0px;
+}
+img{
+	width:100%;
+	height:100%;
+	display:block;
+}
+.main-content{
+	float:left;
+	text-align:center;
+	margin:0px 0px;
+	padding:25px 0px;
+	width:100%;
+}
+.content{
+	float:left;
+	margin:100px 0px 0px;
+	padding:0px 15%;
+	width:70%;
+	overflow:hidden;
+}
+
+/*Buttons*/
+.button-purple{
+	display:inline-block;
+	cursor:pointer;
+	text-transform:uppercase;
+	font-weight:bold;
+	letter-spacing:1px;
+	font-kerning:none;
+	padding:25px 30px;
+	color:#fff;
+	background-color:#572a73;
+	border:2px solid #572a73;
+	transition:background-color 200ms linear, color 200ms linear;
+}
+.button-purple:hover{
+	color:#572a73;
+	background-color:#fff;
+	border:2px solid #572a73;
+	transition:background-color 200ms linear, color 200ms linear;
+}
+.button-purple:disabled,
+.button-purple[disabled]{
+	opacity:0.5;
+}
+
+/*Collectie Page*/
+.collection-content{
+	float:left;
+	margin:175px 0px 0px;
+	height:auto;
+	width:100%;
+	overflow:hidden;
+}
+.collection-set{
+	float:left;
+	width:100%;
+	margin:0px 0px 1%;
+}
+.collection-header{
+	width:80%;
+	padding:0px 10%;
+	margin:0;
+}
+.collection-row{
+	width:100%;
+}
+.collection-item{
+	float:left;
+	width:31%;
+	margin:1% 1%;
+	box-shadow: 10px 10px 10px #aaa;
+}
+
+/*Contact Page*/
+.contact-wrapper{
+	float:left;
+	margin:175px 0px 25px;
+	width:200%;
+}
+.contact-column{
+	float:left;
+	width:40%;
+	padding:0px 5%;
+}
+.contact-text{
+	float:left;
+	width:28%;
+	margin:0px;
+	padding:0px 2% 0px 0px;
+}
+form{
+	float:left;
+	width:70%;
+	margin:0px;
+}
+input,textarea{
+	float:left;
+	padding:20px 3%;
+	border:none;
+	background-color:#eee;
+	margin:5px 0px;
+	color:#aaa;
+	transition:background-color 200ms linear, color 200ms linear;
+}
+input.name{
+	width:43.5%;
+	margin-right:0.5%;
+	font-size:18px;
+}
+input.surname{
+	width:43.5%;
+	margin-left:0.5%;
+	font-size:18px;
+}
+input.mail{
+	width:94%;
+	font-size:18px;
+}
+input.button-width{
+	width:100%;
+}
+textarea.message{
+	width:94%;
+	height:425px;
+	resize:none;
+	font-size:18px;
+}
+input:focus,textarea:focus{
+	background-color:#572a73;
+	color:#fff;
+	outline:none;
+	transition:background-color 200ms linear, color 200ms linear;
+}
+.input-is-full{
+	background-color:green;
+	color:#fff;
+	transition:background-color 200ms linear, color 200ms linear;
+}
+.input-is-empty{
+	background-color:red;
+	color:#fff;
+	transition:background-color 200ms linear, color 200ms linear;
+}
+.contact-completed{
+	text-align:center;
+	margin:50px 0px;
+}
+.contact-slide-left{
+	margin-left:-100%;
+	transition:margin-left 200ms linear;
+}
+
+/*Footer*/
+.footer{
+	background-image:url('resources/img/laurora-logo-wit.png');
+	background-size:100px 100px;
+	background-repeat:no-repeat;
+    background-origin:content-box;
+	background-position:right;
+	line-height:22px;
+	cursor:default;
+	float:left;
+	text-align:center;
+	margin:0px 0px;
+	padding:25px 1% 25px;
+	width:98%;
+	color:#fff;
+	background-color:#444;
+	transition:background-color 200ms linear;
+}
+.footer:hover{
+	background-color:#572a73;
+	transition:background-color 200ms linear;
+}
+.footer-icon-holder{
+	display:inline-block;
+}
+.footer-icon{
+	display:inline;
+	width:32px;
+	height:100%;
+	margin:5px 5px 0px;
+}
