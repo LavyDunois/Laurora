@@ -33,6 +33,9 @@ a{
 textarea{
 	font-family:sans-serif;
 }
+iframe{
+	width:100%;
+}
 
 /*Menu*/
 .left{
