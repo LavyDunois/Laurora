@@ -9,22 +9,33 @@
 		<script src="js/jquery-3.2.1.min.js"></script>
 		<script src="js/laurora.js"></script>
 <?php
-	if(!isset($_GET["page"])){
-		echo '
+	$page = $_GET['page'];
+	switch($page){
+		case '':
+			echo '
 				<title>Laurora | Home</title>
-		';
-	}elseif($_GET["page"] == "home"){
-		echo '
+			';
+			break;
+		case 'home':
+			echo '
 				<title>Laurora | Home</title>
-		';
-	}elseif($_GET["page"] == "collectie"){
-		echo '
-				<title>Laurora | Collectie</title>
-		';
-	}elseif($_GET["page"] == "contact"){
-		echo '
-				<title>Laurora | Contact</title>
-		';
+			';
+			break;
+		case 'collectie':
+			echo '
+					<title>Laurora | Collectie</title>
+			';
+			break;
+		case 'contact':
+			echo '
+					<title>Laurora | Contact</title>
+			';
+			break;
+		default:
+			echo '
+				<title>Laurora | Home</title>
+			';
+			break;
 	}
 ?>
 	</head>

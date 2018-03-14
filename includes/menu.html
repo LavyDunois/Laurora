@@ -7,30 +7,42 @@
 			</div>
 			<div class="right">
 <?php
-	if(!isset($_GET["page"])){
-		echo '
+	switch($page){
+		case '':
+			echo '
 				<a class="menu-item current" href="?page=home">home</a>
 				<a class="menu-item" href="?page=collectie">collectie</a>
 				<a class="menu-item" href="?page=contact">contact</a>
-		';
-	}elseif($_GET["page"] == "home"){
-		echo '
+			';
+			break;
+		case 'home':
+			echo '
 				<a class="menu-item current" href="?page=home">home</a>
 				<a class="menu-item" href="?page=collectie">collectie</a>
 				<a class="menu-item" href="?page=contact">contact</a>
-		';
-	}elseif($_GET["page"] == "collectie"){
-		echo '
+			';
+			break;
+		case 'collectie':
+			echo '
 				<a class="menu-item" href="?page=home">home</a>
 				<a class="menu-item current" href="?page=collectie">collectie</a>
 				<a class="menu-item" href="?page=contact">contact</a>
-		';
-	}elseif($_GET["page"] == "contact"){
-		echo '
+			';
+			break;
+		case 'contact':
+			echo '
 				<a class="menu-item" href="?page=home">home</a>
 				<a class="menu-item" href="?page=collectie">collectie</a>
 				<a class="menu-item current" href="?page=contact">contact</a>
-		';
+			';
+			break;
+		default:
+			echo '
+				<a class="menu-item current" href="?page=home">home</a>
+				<a class="menu-item" href="?page=collectie">collectie</a>
+				<a class="menu-item" href="?page=contact">contact</a>
+			';
+			break;
 	}
 ?>
 			</div>
