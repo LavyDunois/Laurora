@@ -8,5 +8,23 @@
 		<link rel="shortcut icon" type="image/x-icon" href="images/head/laurora-favicon.png">
 		<script src="js/jquery-3.2.1.min.js"></script>
 		<script src="js/laurora.js"></script>
-		<title>Laurora | Home</title>
+<?php
+	if(!isset($_GET["page"])){
+		echo '
+				<title>Laurora | Home</title>
+		';
+	}elseif($_GET["page"] == "home"){
+		echo '
+				<title>Laurora | Home</title>
+		';
+	}elseif($_GET["page"] == "collectie"){
+		echo '
+				<title>Laurora | Collectie</title>
+		';
+	}elseif($_GET["page"] == "contact"){
+		echo '
+				<title>Laurora | Contact</title>
+		';
+	}
+?>
 	</head>
