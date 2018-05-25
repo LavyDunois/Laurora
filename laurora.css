@@ -185,23 +185,23 @@ img{
 	margin:175px 0px 0px;
 	width:100%;
 }
-.contact-left-column{
+.contact-inner-content{
 	float:left;
-	width:35%;
-	padding:0% 0% 0% 15%;
+	width:70%;
+	padding:0px 15%;
+	margin:0px 0px 20px;
 }
-.contact-right-column{
-	float:right;
-	width:45%;
-	padding:0% 0% 0% 5%;
-}
-.contact-days{
+.contact-text{
 	float:left;
 	width:30%
 }
+.contact-days{
+	float:left;
+	width:40%
+}
 .contact-times{
 	float:left;
-	width:70%;
+	width:60%;
 }
 .google-maps{
 	float:left;
@@ -210,21 +210,9 @@ img{
 }
 
 /*Contact Page Form*/
-.contact-column{
-	float:left;
-	width:40%;
-	padding:0px 5%;
-}
-.contact-text{
-	float:left;
-	width:28%;
-	margin:0px;
-	padding:0px 2% 0px 0px;
-}
-form{
+.contact-form{
 	float:left;
 	width:70%;
-	margin:0px;
 }
 input,textarea{
 	float:left;
