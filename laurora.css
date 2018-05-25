@@ -253,6 +253,18 @@ input:focus,textarea:focus{
 	transition:background-color 200ms linear, color 200ms linear;
 }
 
+/*Old Contact*/
+.contact-left-column{
+	float:left;
+	width:35%;
+	padding:0% 0% 0% 15%;
+}
+.contact-right-column{
+	float:right;
+	width:45%;
+	padding:0% 0% 0% 5%;
+}
+
 /*Footer*/
 .footer{
 	background-image:url('images/footer/laurora-logo-wit.png');
@@ -286,4 +298,17 @@ input:focus,textarea:focus{
 	display:inline;
 	width:32px;
 	height:100%;
+}
+.footer-url{
+	display:inline-block;
+	color:#fff;
+	margin:8px 0 0 0;
+	padding:5px;
+	transition:color 200ms linear, background-color 200ms linear, box-shadow 200ms linear;
+}
+.footer-url:hover{
+	box-shadow:0px 0px 7px 2px #fff;
+	color:#572a73;
+	background-color:#fff;
+	transition:color 200ms linear, background-color 200ms linear, box-shadow 200ms linear;
 }
