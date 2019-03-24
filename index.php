@@ -12,6 +12,9 @@
 			break;
 		case 'collectie':
 			include('includes/collectie.html');
+			break;		
+		case 'workshops':
+			include('includes/workshops.html');
 			break;
 		case 'contact':
 			include('includes/contact.html');
