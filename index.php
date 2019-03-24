@@ -1,9 +1,14 @@
 <?php
 	//Setup Website
 	include('includes/head.html');
-	include('includes/menu.html');
 	$page = $_GET['page'];
+	if($page != 'menu_mobile'){
+		include('includes/menu.html');
+	}
 	switch($page){
+		case 'menu_mobile':
+			include('includes/menu_mobile.html');
+			break;
 		case '':
 			include('includes/home.html');
 			break;

@@ -1,12 +1,11 @@
-	<body>
 		<div class="menu">
-			<!--<div class="vacation-banner">i.v.m. vakantie zijn wij gesloten van 17 tot en met 22 september</div>-->
-			<div class="left">
+			<!--<div class="news-banner">i.v.m. vakantie zijn wij gesloten van 17 tot en met 22 september</div>-->
+			<div class="menu-left-column">
 				<a href="?page=home">
 					<img class="menu-logo" src="images/menu/laurora-edelsmederij-paars.png">
 				</a>
 			</div>
-			<div class="right">
+			<div class="menu-right-column">
 <?php
 	switch($page){
 		case '':
@@ -59,5 +58,8 @@
 			break;
 	}
 ?>
+			</div>
+			<div class="menu-right-mobile-column">
+				<a class="menu-item" id="menu-button" href="?page=menu_mobile">menu</a>
 			</div>
 		</div>
