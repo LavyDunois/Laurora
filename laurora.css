@@ -208,9 +208,9 @@ img{
 }
 .workshops-left-column{
 	float:left;
-	width:10%;
+	width:44%;
 	text-align:right;
-	margin:0 1% 0 34%;
+	margin:0 1% 0 0;
 }
 .workshops-right-column{
 	float:right;
