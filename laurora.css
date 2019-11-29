@@ -41,7 +41,7 @@ textarea{
 
 /*Menu*/
 .news-banner{
-	position:fixed;
+	float:left;
 	left:0;
 	top:0;
 	text-align:center;
@@ -228,6 +228,7 @@ img{
 	margin:0;
 }
 .collection-row{
+	float:left;
 	width:100%;
 }
 .collection-item{
@@ -332,15 +333,24 @@ input:focus,textarea:focus{
 }
 
 /*Old Contact*/
+@media only screen and (max-width: 850px){
+	.contact-left-column{
+		padding:0% 1% 0% 0.5% !important;
+	}
+	.contact-right-column{
+		padding:0% 0.5% 0% 1% !important;
+	}
+}
 .contact-left-column{
+	text-align:right;
 	float:left;
-	width:35%;
-	padding:0% 0% 0% 15%;
+	width:45%;
+	padding:0% 1% 0% 4%;
 }
 .contact-right-column{
 	float:right;
 	width:45%;
-	padding:0% 0% 0% 5%;
+	padding:0% 4% 0% 1%;
 }
 
 /*Footer*/
